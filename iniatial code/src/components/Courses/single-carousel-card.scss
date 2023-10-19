@@ -1,0 +1,33 @@
+@import '../../assets/scss/variables.scss';
+
+.card {
+  position: relative;
+}
+
+.card-image {
+  max-height: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-footer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.512);
+  bottom: 0;
+  left: 25%;
+
+  height: 70px;
+  width: 50%;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  h6 {
+    color: $components-golden;
+    font-size: 30px;
+    text-align: center;
+
+    margin: 10px;
+  }
+}
+

@@ -1,0 +1,86 @@
+@import '../../assets/scss/variables.scss';
+
+.about-us {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.about-us-img-and-frame {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.logo-hero {
+  width: 60%;
+  position: absolute;
+  top: 100px;
+  z-index: 1000;
+  opacity: 0.8;
+  background-color: #a2886a67;
+}
+
+
+
+.hero-img {
+  position: relative;
+  width: 95%;
+  height: 95%;
+}
+.about-us-img {
+  z-index: -5;
+  width: 100%;
+  height: 106%;
+}
+
+.about-us-content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-us-content-text {
+  margin: 20px 0;
+}
+
+.golden-frame {
+  position: absolute;
+  top: -23px;
+  left: 0px;
+  width: 30%;
+  height: 117%;
+  border: 10px solid $components-golden;
+  border-radius: 15px;
+  z-index: -10;
+}
+
+@media (min-width: $tabletBr) {
+  .about-us {
+    flex-direction: row;
+  }
+  .about-us-img-and-frame  {
+    flex-grow: 1;
+  }
+
+  .about-us-content {
+    width: 80%;
+  }
+  .golden-frame {
+    height: 120%;
+  }
+}

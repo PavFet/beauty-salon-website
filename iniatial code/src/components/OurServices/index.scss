@@ -1,0 +1,65 @@
+@import '../../assets/scss/variables.scss';
+
+.procedures {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  position: relative;
+}
+
+.our-service {
+  scroll-behavior: smooth;
+}
+
+.procedure-line {
+  background-color: $components-golden;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  z-index: -10;
+}
+
+.procedure-single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.procedure-single-active {
+  background-color: $components-golden;
+}
+
+
+.procedure-title {
+  font-family: $font-jost;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #555555;
+  position: absolute;
+  bottom: -40px;
+}
+
+.procedure-container {
+  margin: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+// .procedure-desc-img {
+//   border-radius: 50%;
+// }
+
+.procedure-desc-img img {
+  width: 300px;
+  height: 200px;
+  border-radius: 40%;
+}
+
